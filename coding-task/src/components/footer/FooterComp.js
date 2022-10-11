@@ -7,7 +7,7 @@ class FooterComp extends Component {
       <div className="footer bg-dark">
         <Container fluid>
           <Row>
-            <Col className="FooterLogo">
+            <Col className="FooterLogo" xs={12} sm={12} md={4} lg={4}>
               <img
                 alt=""
                 src="logo/logo.png"
@@ -16,12 +16,12 @@ class FooterComp extends Component {
                 className="d-inline-block align-top"
               />
             </Col>
-            <Col className="FooterNavigationBar">
+            <Col className="FooterNavigationBar" xs={12} sm={12} md={4} lg={4}>
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#service">Service</Nav.Link>
             </Col>
-            <Col className="FooterContactInfo">
+            <Col className="FooterContactInfo" xs={12} sm={12} md={4} lg={4}>
               <span>
                 <img
                   alt=""

@@ -38,13 +38,3 @@
 .twitchCard:hover .card {
     box-shadow: 0 0 12px 3px rgba(99, 204, 131, 0.9);
 }
-
-/* Only for Mobile and Tablet Footer Slide Up */
-@media screen and (max-width: 768px) {
-    .main {
-        min-height: 100vh;
-        position: relative;
-        z-index: 1;
-        background-color: grey;
-    }
-}

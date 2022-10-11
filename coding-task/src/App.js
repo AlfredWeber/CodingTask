@@ -6,11 +6,11 @@ import Body from "./components/main/MainComp.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="Layout">
         <NavbarComp />
         <Body />
         <FooterComp />
-      </header>
+      </div>
     </div>
   );
 }

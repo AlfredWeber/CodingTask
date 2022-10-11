@@ -4,3 +4,10 @@
 body {
     background-color: grey !important;
 }
+
+.Layout {
+    position: relative;
+    min-height: 100vh;
+    display: flex !important;
+    flex-direction: column;
+}
