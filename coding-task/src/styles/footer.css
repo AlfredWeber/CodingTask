@@ -1,12 +1,27 @@
 .footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
     text-align: center;
     color: white;
     padding: 10px;
   }
+
+  /* Only for Mobile and Tablet Footer Slide Up */
+  @media screen and (max-width: 768px) {
+    .footer {
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      padding: 10px;
+    }
+}
 
   .FooterNavigationBar {
     display: flex;

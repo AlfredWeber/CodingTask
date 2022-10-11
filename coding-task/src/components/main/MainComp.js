@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 class MainComp extends Component {
   render() {
     return (
-      <div className="mt-5">
+      <div className="mt-5 main">
         <Container>
           <Row className="text-center bg-dark">
             <Col
