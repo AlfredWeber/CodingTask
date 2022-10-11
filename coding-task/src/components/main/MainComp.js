@@ -5,9 +5,13 @@ class MainComp extends Component {
   render() {
     return (
       <div className="mt-5">
-        <Container style={{ backgroundColor: "lightgrey" }}>
+        <Container>
           <Row className="text-center bg-dark">
             <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
               as="a"
               href="https://www.twitch.tv/summit1g"
               className="twitchCard"
@@ -27,6 +31,10 @@ class MainComp extends Component {
               </Card>
             </Col>
             <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
               as="a"
               href="https://www.twitch.tv/broxah"
               className="twitchCard"
@@ -49,6 +57,10 @@ class MainComp extends Component {
               </Card>
             </Col>
             <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
               as="a"
               href="https://www.twitch.tv/riotgames"
               className="twitchCard"
@@ -67,9 +79,11 @@ class MainComp extends Component {
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
-          <Row className="text-center bg-dark">
             <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
               as="a"
               href="https://www.twitch.tv/nasa"
               className="twitchCard"
@@ -88,7 +102,15 @@ class MainComp extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col as="a" href="https://www.twitch.tv/xqc" className="twitchCard">
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              as="a"
+              href="https://www.twitch.tv/xqc"
+              className="twitchCard"
+            >
               <div className="avatar">
                 <img src="./twitchLogos/xqc.png" className="cardImage" alt="" />
               </div>
@@ -100,6 +122,10 @@ class MainComp extends Component {
               </Card>
             </Col>
             <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
               as="a"
               href="https://www.twitch.tv/x2pac_thuglord"
               className="twitchCard"
