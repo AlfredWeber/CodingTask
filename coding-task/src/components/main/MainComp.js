@@ -6,26 +6,121 @@ class MainComp extends Component {
     return (
       <div className="mt-5">
         <Container style={{ backgroundColor: "lightgrey" }}>
-          <Row>
-            <Col>
+          <Row className="text-center bg-dark">
+            <Col
+              as="a"
+              href="https://www.twitch.tv/summit1g"
+              className="twitchCard"
+            >
+              <div className="avatar">
+                <img
+                  src="./twitchLogos/Summit1G.png"
+                  className="cardImage"
+                  alt=""
+                />
+              </div>
               <Card>
-                <Card.Img variant="top" src="./logo/logo.png" height={150} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Summit1G</Card.Title>
+                  <Card.Text>Summit1G is a variety Streamer!</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              as="a"
+              href="https://www.twitch.tv/broxah"
+              className="twitchCard"
+            >
+              <div className="avatar">
+                <img
+                  src="./twitchLogos/Broxah.png"
+                  className="cardImage"
+                  alt=""
+                />
+              </div>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Broxah</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Broxah is ex-professional League of Legends player streaming
+                    on Twitch!
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col>Brand</Col>
-            <Col>C</Col>
+            <Col
+              as="a"
+              href="https://www.twitch.tv/riotgames"
+              className="twitchCard"
+            >
+              <div className="avatar">
+                <img
+                  src="./twitchLogos/RiotGames.png"
+                  className="cardImage"
+                  alt=""
+                />
+              </div>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Riot Games</Card.Title>
+                  <Card.Text>The offical Riot Games Twitch Stream!</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
-          <Row>
-            <Col>D</Col>
-            <Col>E</Col>
-            <Col>F</Col>
+          <Row className="text-center bg-dark">
+            <Col
+              as="a"
+              href="https://www.twitch.tv/nasa"
+              className="twitchCard"
+            >
+              <div className="avatar">
+                <img
+                  src="./twitchLogos/Nasa.png"
+                  className="cardImage"
+                  alt=""
+                />
+              </div>
+              <Card>
+                <Card.Body>
+                  <Card.Title>NASA</Card.Title>
+                  <Card.Text>The offical NASA Twitch Stream!</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col as="a" href="https://www.twitch.tv/xqc" className="twitchCard">
+              <div className="avatar">
+                <img src="./twitchLogos/xqc.png" className="cardImage" alt="" />
+              </div>
+              <Card>
+                <Card.Body>
+                  <Card.Title>xQc</Card.Title>
+                  <Card.Text>xQc is a variety Streamer!</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              as="a"
+              href="https://www.twitch.tv/x2pac_thuglord"
+              className="twitchCard"
+            >
+              <div className="avatar">
+                <img
+                  src="./twitchLogos/x2pac.png"
+                  className="cardImage"
+                  alt=""
+                />
+              </div>
+              <Card>
+                <Card.Body>
+                  <Card.Title>x2Pac_ThuGLorD</Card.Title>
+                  <Card.Text>
+                    x2Pac_ThuGLorD is a professional Call Of Duty player
+                    streaming on Twitch!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </div>

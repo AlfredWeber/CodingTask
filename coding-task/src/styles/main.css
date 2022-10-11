@@ -1,0 +1,40 @@
+.twitchCard {
+    cursor: pointer;
+    text-decoration: none;
+    color: black !important;
+    padding: 25px;
+}
+
+.avatar {
+    width: 150px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.avatar img {
+    border: solid 6px transparent;
+    border-radius: 50%;
+}
+
+.twitchCard:hover .avatar img {
+    border-color: rgb(99, 204, 131);
+}
+
+.twitchCard {
+    padding: 20px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.card {
+    height: 150px !important;
+    max-height: 150px;
+}
+
+.card-text{
+    padding-top: 20px;
+}
+
+.twitchCard:hover .card {
+    box-shadow: 0 0 12px 3px rgba(99, 204, 131, 0.9);
+}
