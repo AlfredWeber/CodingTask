@@ -74,11 +74,11 @@ class MainComp extends Component {
       <div className="mt-5 mb-5 main">
         <Container>
           <FormControl
+            className="searchBar"
             type="text"
             placeholder="Search..."
             onChange={(e) => filter(e.target.value)}
           />
-          <br></br>
           <Row className="text-center">
             {this.state.filterData.map((item) => {
               return (

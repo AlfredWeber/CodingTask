@@ -26,6 +26,11 @@
     cursor: pointer;
 }
 
+.cardImage {
+    width: 82px;
+    height: 82px;
+}
+
 .card {
     height: 150px !important;
     max-height: 150px;
@@ -37,4 +42,8 @@
 
 .twitchCard:hover .card {
     box-shadow: 0 0 12px 3px rgba(99, 204, 131, 0.9);
+}
+
+.searchBar {
+    margin-bottom: 21px;
 }

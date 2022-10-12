@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Nav, Container } from "react-bootstrap";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class FooterComp extends Component {
   render() {
@@ -17,9 +18,15 @@ class FooterComp extends Component {
               />
             </Col>
             <Col className="FooterNavigationBar" xs={12} sm={12} md={4} lg={4}>
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#service">Service</Nav.Link>
+              <Nav.Link as={Link} to={"/home"}>
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/api"}>
+                API
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/about"}>
+                About
+              </Nav.Link>
             </Col>
             <Col className="FooterContactInfo" xs={12} sm={12} md={4} lg={4}>
               <span>

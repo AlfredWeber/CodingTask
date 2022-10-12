@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class NavbarComp extends Component {
   render() {
@@ -7,14 +8,14 @@ class NavbarComp extends Component {
       <div>
         <Navbar bg="dark" variant="dark">
           <Container fluid>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand as={Link} to={"/home"}>
               <img
                 alt=""
                 src="logo/logo.png"
                 width="50"
                 height="50"
                 className="d-inline-block align-top"
-              />{" "}
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -23,9 +24,15 @@ class NavbarComp extends Component {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#service">Service</Nav.Link>
+                <Nav.Link as={Link} to={"/home"}>
+                  Home
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/api"}>
+                  API
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/about"}>
+                  About
+                </Nav.Link>
               </Nav>
               <Form className="d-flex">
                 <Form.Control
