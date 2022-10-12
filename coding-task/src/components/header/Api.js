@@ -37,7 +37,11 @@ class Api extends Component {
         filterData: this.state.starWarsData.filter((item) => {
           return (
             item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-            item.gender.toLowerCase().includes(searchText.toLowerCase())
+            item.gender.toLowerCase().includes(searchText.toLowerCase()) ||
+            item.hair_color.toLowerCase().includes(searchText.toLowerCase()) ||
+            item.eye_color.toLowerCase().includes(searchText.toLowerCase()) ||
+            item.height.toLowerCase().includes(searchText.toLowerCase()) ||
+            item.mass.toLowerCase().includes(searchText.toLowerCase())
           );
         }),
       });
