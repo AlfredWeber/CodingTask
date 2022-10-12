@@ -4,7 +4,12 @@ import FooterComp from "./components/footer/FooterComp.js";
 import Body from "./components/main/MainComp.js";
 import About from "./components/header/About.js";
 import Api from "./components/header/Api.js";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   return (
@@ -13,9 +18,10 @@ function App() {
         <Router>
           <NavbarComp />
           <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/about" element={<About />} />
             <Route path="/api" element={<Api />} />
-            <Route path="/home" element={<Body />} />
+            <Route index path="/home" element={<Body />} />
           </Routes>
           <FooterComp />
         </Router>
